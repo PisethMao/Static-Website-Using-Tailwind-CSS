@@ -1,0 +1,12 @@
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: teal;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
+}
