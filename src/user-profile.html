@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Page</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./custom.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/istad-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-white shadow-md sticky top-0">
+        <div class="mx-auto max-w-screen-xl px-6 sm:px-6 lg:px-8 py-4">
+          <div class="flex h-16 items-center justify-between">
+            <div class="md:flex md:items-center md:gap-12">
+              <a class="block text-teal-600" href="./home.html">
+                <span class="sr-only text-teal-600 font-semibold">Home</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                  viewBox="0 0 16 12"
+                  class="h-8"
+                >
+                  <path
+                    d="M 6.55466,11.542 C 6.10897,11.0187 5.36501,10.459 4.6445,10.1049 3.91698,9.7473 3.22595,9.5487 2.44138,9.4719 2.28669,9.4569 2.15844,9.4429 2.15639,9.4409 c -0.002,0 0.002,-1.6151 0.01,-3.5846 l 0.0132,-3.5808 0.14284,0.014 c 0.87708,0.087 1.85601,0.4184 2.59669,0.8803 0.63833,0.398 1.29749,1.0126 1.71774,1.6015 l 0.10576,0.1482 0,3.4014 c 0,1.8707 -0.008,3.401 -0.0176,3.4007 -0.01,-3e-4 -0.0861,-0.081 -0.16992,-0.1794 z m 0.72656,-3.2297 0,-3.4156 0.20424,-0.2729 C 7.74623,4.2754 8.27075,3.7505 8.61758,3.491 9.54472,2.7971 10.55044,2.405 11.70505,2.287 l 0.14648,-0.015 0,3.5858 0,3.5859 -0.16992,0.016 C 10.0739,9.6093 8.6801,10.2726 7.5899,11.4068 l -0.30868,0.3212 0,-3.4156 z m 0.9961,3.1835 c 0.63101,-0.592 1.46635,-1.0624 2.30546,-1.2985 0.4391,-0.1235 1.01012,-0.2097 1.38918,-0.2097 0.19874,0 0.30898,-0.043 0.37116,-0.1451 0.0468,-0.077 0.0473,-0.1101 0.0474,-3.0157 l 8e-5,-2.9382 0.0879,0.016 c 0.0483,0.01 0.18544,0.048 0.30468,0.086 l 0.2168,0.069 0,3.6669 c 0,2.0168 -0.008,3.6669 -0.0179,3.6669 -0.01,0 -0.15489,-0.031 -0.32227,-0.069 -0.66143,-0.149 -1.20614,-0.2002 -1.92152,-0.1809 -0.86772,0.024 -1.54209,0.145 -2.34375,0.422 l -0.30469,0.1053 0.1875,-0.1759 z m -2.67188,0.057 C 5.27252,11.4336 4.7227,11.2931 4.35153,11.2325 c -0.50468,-0.082 -0.85286,-0.1038 -1.4714,-0.09 -0.61458,0.013 -0.98632,0.056 -1.49344,0.1711 -0.1418,0.032 -0.28682,0.065 -0.32227,0.072 l -0.0644,0.014 1.1e-4,-3.6767 1.2e-4,-3.6768 0.27529,-0.08 c 0.1514,-0.044 0.28847,-0.085 0.30458,-0.09 0.0233,-0.01 0.0293,0.589 0.0293,2.9349 0,3.2057 -0.007,3.027 0.12978,3.1169 0.0476,0.031 0.1465,0.045 0.42893,0.062 1.12246,0.064 2.18752,0.4409 3.05702,1.0822 0.1875,0.1383 0.63749,0.5181 0.66328,0.5598 0.018,0.029 0.006,0.026 -0.28292,-0.078 z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="hidden md:block">
+              <nav aria-label="Global">
+                <ul class="flex items-center gap-6 text-sm">
+                  <li>
+                    <a
+                      class="text-gray-500 transition hover:text-gray-500/75 nav-link"
+                      href="./home.html"
+                    >
+                      Home
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-gray-500 transition hover:text-gray-500/75 nav-link"
+                      href="./user-profile.html"
+                    >
+                      User Profile
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="sm:flex sm:gap-4">
+                <a
+                  class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white hover:text-gray-700 cursor-pointer focus:outline-none focus:ring focus:ring-teal-300 transition duration-200 hover:bg-teal-700 shadow-sm hover:shadow-md"
+                  href="#"
+                >
+                  Login
+                </a>
+              </div>
+
+              <div class="block md:hidden">
+                <button
+                  type="button"
+                  class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <article aria-label="Breadcrumb" class="pt-4">
+        <ol class="flex items-center gap-1 text-sm text-gray-700 ml-80">
+          <li>
+            <a
+              href="./home.html"
+              class="block transition-colors px-2 py-1 rounded-md cursor-pointer duration-200 ease-in-out hover:text-indigo-600 hover:underline focus:outline focus:ring-2 focus:ring-indigo-300"
+            >
+              Home
+            </a>
+          </li>
+
+          <li class="rtl:rotate-180 text-gray-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m9 20.247 6-16.5"
+              />
+            </svg>
+          </li>
+
+          <li>
+            <a
+              href="./user-profile.html"
+              class="block transition-colors px-2 py-1 rounded-md cursor-pointer duration-200 ease-in-out hover:text-indigo-600 hover:underline focus:outline focus:ring-2 focus:ring-indigo-300"
+            >
+              User Profile
+            </a>
+          </li>
+        </ol>
+      </article>
+    </header>
+    <main class="py-12 px-4 bg-gray-50">
+      <section class="max-w-2xl mx-auto">
+        <a
+          href="#"
+          class="block rounded-md border border-gray-200 p-6 shadow-md sm:p-6 bg-white hover:shadow-lg transition cursor-pointer hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        >
+          <div class="sm:flex sm:justify-between sm:gap-4 lg:gap-6">
+            <div class="sm:order-last sm:shrink-0 flex items-center gap-4">
+              <img
+                alt="Profile"
+                src="../images/piseth.png"
+                class="size-16 rounded-full object-cover sm:size-[72px] w-16 h-16"
+              />
+            </div>
+
+            <div class="mt-4 sm:mt-0">
+              <h3 class="text-lg font-medium text-pretty text-gray-900">
+                How "Provide and Prejudice" Change My View on Classic Literature
+              </h3>
+
+              <p class="mt-1 text-sm text-gray-700">By Piseth Mao</p>
+
+              <p class="mt-4 line-clamp-2 text-sm text-pretty text-gray-700">
+                I always though classics were boring-until I picked up Jane
+                Austine. Here's how this novel helped me appreciate timeless
+                storytlling and rich characters.
+              </p>
+            </div>
+          </div>
+
+          <dl class="mt-6 flex gap-4 lg:gap-6 justify-between">
+            <div class="flex items-center gap-2">
+              <dt class="text-gray-700">
+                <span class="sr-only"> Published on </span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                  />
+                </svg>
+              </dt>
+
+              <dd class="text-xs text-gray-700">09/05/2025</dd>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <dt class="text-gray-700">
+                <span class="sr-only"> Reading time </span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                  />
+                </svg>
+              </dt>
+
+              <dd class="text-xs text-gray-700">6 minutes</dd>
+            </div>
+          </dl>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <address class="bg-white dark:bg-gray-900">
+        <div
+          class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24"
+        >
+          <div class="text-center">
+            <h2
+              class="text-3xl font-extrabold text-gray-900 sm:text-5xl dark:text-white"
+            >
+              Join Our Book Club
+            </h2>
+
+            <p class="mx-auto mt-4 max-w-sm text-gray-300 dark:text-gray-400">
+              Discover new reads, share your thoughts, and connect with fellow
+              book lovers around the world.
+            </p>
+
+            <a
+              href="#"
+              class="mt-8 inline-block rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-indigo-700 hover:text-white focus:ring-3 focus:outline-hidden bg-indigo-600 hover:shadow-lg focus:outline-noneocu focus:right-2 focus:ring-indigo-400 focus:ring-offset-2 transition duration-300 ease-in-out"
+            >
+              Start Reading With Us
+            </a>
+          </div>
+
+          <div
+            class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24 dark:border-gray-800"
+          >
+            <ul
+              class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 transition hover:opacity-75 dark:text-gray-400 hover:text-indigo-600 hover:underline cursor-pointer"
+                >
+                  Book Club Guidelines
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 transition hover:opacity-75 dark:text-gray-400 hover:text-indigo-600 hover:underline cursor-pointer"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-500 transition hover:opacity-75 dark:text-gray-400 hover:text-indigo-600 hover:underline cursor-pointer"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+              <li>
+                <a
+                  href="https://www.facebook.com/piseth.mao.2025"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">Facebook</span>
+
+                  <i class="fa-brands fa-facebook h-6 w-6"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">Instagram</span>
+
+                  <i class="fa-brands fa-instagram h-6 w-6"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.goodreads.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">Goodreads</span>
+
+                  <i class="fa-brands fa-goodreads h-6 w-6"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.youtube.com/@maopiseth5456"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">YouTube</span>
+
+                  <i class="fa-brands fa-youtube h-6 w-6"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.tiktok.com/@piseth_mao"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">TikTok</span>
+
+                  <i class="fa-brands fa-tiktok w-6 h-6"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </address>
+    </footer>
+  </body>
+</html>

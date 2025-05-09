@@ -9,7 +9,10 @@
         "ignore": [
           "-webkit-text-size-adjust",
           "color: color-mix(in srgb, oklch(55.1% 0.027 264.364) 75%, transparent)",
-          "color: color-mix(in srgb, oklch(44.6% 0.03 256.802) 75%, transparent)"
+          "color: color-mix(in srgb, oklch(44.6% 0.03 256.802) 75%, transparent)",
+          "text-wrap",
+          "text-wrap: pretty",
+          "text-wrap: wrap"
         ]
       }
     ],
@@ -31,6 +34,13 @@
       "default",
       {
         "image-alt": "off"
+      }
+    ],
+    "disown-opener": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
       }
     ]
   }
